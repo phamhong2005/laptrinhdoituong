@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class container {
+        name;
+        dong;
+        canNang;
+        mauSac;
+
+        constructor(nameInput,dongInput,canNangInput,mauSacInput) {
+            this.name = nameInput;
+            this.dong=dongInput;
+            this.canNang=canNangInput;
+            this.mauSac=mauSacInput;
+        }
+        star(){
+            console.log(this.name+ " xe bắt đầu chạy")
+        }
+    }
+    let ctn1=new container('G63',450,400,'Đen')
+    console.log(ctn1.name)
+    ctn1.star()
+
+
+
+    let ctn2 = new  container('mer',200,1000,'Trắng')
+    console.log(ctn2.name)
+    ctn2.star()
+
+    </script>
+</body>
+</html>

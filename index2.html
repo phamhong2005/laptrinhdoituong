@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Hcn{
+      width;
+      height;
+      S;
+      V;
+
+      constructor(widthInput,heightInput,SInput,VInput) {
+          this.width = widthInput;
+          this.height = heightInput;
+      }
+      getS(){
+          this.S= (this.width * this.height)
+          return this.S
+      }
+      getV(){
+          this.V = (this.width + this.height) * 2
+          return this .V
+      }
+  }
+  let a = new Hcn(5,6)
+  let dta  = a.getS()
+ alert(dta)
+let cva = a.getV()
+  document.write(cva)
+
+</script>
+</body>
+</html>

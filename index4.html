@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Student {
+        name;
+        age;
+        arr;
+
+        constructor(nameInput, ageInput, arrInput) {
+            this.name = nameInput;
+            this.age = ageInput;
+            this.arr = arrInput;
+        }
+        nickName(){
+            let name = this.name + this.age
+            return name
+        }
+        average(){
+            let tong = 0
+            for (let i = 0; i < this.arr.length; i++) {
+                tong = (tong + this.arr[i])
+            } let tb = tong / this.arr.length
+            return tb
+        }
+    }
+    let a = new Student("Hong20cm",18,[7,6,7])
+    document.write("Tên "+a.name +'</br>', "Tuổi"+ a.age +'</br>')
+   document.write( 'Điểm trung bình của'+a.name+'là:'+a.average().toFixed(2))
+</script>
+</body>
+</html>

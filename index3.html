@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    class Student {
+        name;
+        age;
+        arr;
+
+        constructor(nameInput, ageInput, arrInput) {
+            this.name = nameInput;
+            this.age = ageInput;
+            this.arr = arrInput;
+        }
+
+        thongTin() {
+            let qi = this.name +  this.age
+            return qi
+        }
+
+        trungBinh() {
+            let tong = 0
+            for (let i = 0; i < this.arr.length; i++) {
+                tong = (this.arr[i] + tong)
+            }
+            let tb = tong / this.arr.length
+            return tb
+        }
+    }
+    let a = new Student("Hồng",18,[9,8,7])
+
+    document.write("Tên:"+a.name +"</br>" ,"Tuổi"+ a.age +"</br>")
+    let bi = a.trungBinh()
+    document.write("điểm trung bình là:"+bi +'</br>')
+
+    let b = new Student("Long",18,[5,6,7])
+    document.write("Cháu tên là :"+ b.name +'</br>',"Tuổi:"+ b.age +'</br>')
+
+    let f = b.trungBinh()
+    document.write("điểm trung bình :"+f +'</br>')
+
+    if (bi>f){
+        document.write(a.name +" :Điểm cao hơn")
+    }
+    else{
+        document.write(b.name + " :Điểm cao hơn")
+    }
+
+</script>
+</body>
+</html>
